@@ -1,9 +1,9 @@
 MODS = {
-    [0] = true;
+    [2266148679] = true; -- caps lock
 }
 
 ADMIN = {
-    [2266148679] = true; -- me
+    [0] = true;
 }
 
 while wait(1) do
