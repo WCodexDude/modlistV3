@@ -6,7 +6,6 @@ ADMIN = {
     [0] = true;
 }
 
-while wait(1) do
 function initiateNames()
     game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
     for _,v in pairs(game:GetService('Players'):GetPlayers()) do
@@ -22,7 +21,6 @@ function initiateNames()
             end
         end
     end
-end
 end
 
 local successful, errored = pcall(initiateNames)
