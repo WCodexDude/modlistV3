@@ -3,7 +3,7 @@ MODS = {
 }
 
 ADMIN = {
-    [0] = true;
+
 }
 
 function initiateNames()
@@ -11,7 +11,7 @@ function initiateNames()
     for _,v in pairs(game:GetService('Players'):GetPlayers()) do
         if v.Character then
             if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[✔] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
             if MODS[v.UserId] then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
